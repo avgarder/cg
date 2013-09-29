@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cmath>
 #include "vector.h"
 
 namespace cg
@@ -36,6 +37,11 @@ namespace cg
          x += delta.x;
          y += delta.y;
          return *this;
+      }
+
+      Scalar distance(point_2t<Scalar> p)
+      {
+         return sqrt((x - p.x) * (x - p.x) + (y - p.y) * (y - p.y));
       }
    };
 

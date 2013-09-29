@@ -3,3 +3,8 @@
 *.un~
 build
 .DS_Store
+_build
+CMakeFiles
+Makefile
+*.cmake
+*.cbp

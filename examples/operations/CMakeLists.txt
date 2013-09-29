@@ -19,3 +19,9 @@ target_link_libraries(contour_contains_point visualization ${GMP_LIBRARIES})
 
 add_executable(ccw_convex_contains_point ccw_convex_contains_point.cpp)
 target_link_libraries(ccw_convex_contains_point visualization ${GMP_LIBRARIES})
+
+add_executable(douglas_peucker douglas_peucker.cpp)
+target_link_libraries(douglas_peucker visualization ${GMP_LIBRARIES})
+
+add_executable(radius radius.cpp)
+target_link_libraries(radius visualization ${GMP_LIBRARIES})
